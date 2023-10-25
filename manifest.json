@@ -1,0 +1,33 @@
+{
+    "name": "chrome-fake-user-details-generator",
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "author": "shivshive",
+    "action": {
+        "default_title": "👉 Get User Details 👈"
+    },
+    "icons": {
+        "16": "user.png",
+        "32": "user.png",
+        "48": "user.png",
+        "128": "user.png"
+    },
+    "permissions": [
+        "activeTab",
+        "sidePanel",
+        "contextMenus",
+        "storage",
+        "scripting",
+        "tabs",
+        "browsingData",
+        "bookmarks",
+        "proxy",
+        "webNavigation"
+    ],
+    "side_panel": {
+        "default_path": "dist/index.html"
+    },
+    "host_permissions": [
+        "https://*/*"
+    ]
+}
